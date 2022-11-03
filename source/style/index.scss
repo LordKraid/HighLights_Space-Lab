@@ -1,4 +1,5 @@
 @import url(null.scss);
+@import url(main.scss);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -10,12 +11,24 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+.wrapper{
     overflow-x: hidden;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 14px;
+    color: #FFFFFF;
+
+    //background: #E5E5E5;
+    background-color: black;
+
+    min-height: 100%;
+}
+
+.content{
+    max-width: 1312px;
+    padding: 0 25px;
+    margin: 0 auto;
 }
 
 h1{
