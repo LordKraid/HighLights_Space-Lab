@@ -1,52 +1,54 @@
+//===Main===
+.wrapper{
+    background-color: white;
+}
+
+.discover{
+    display: flex;
+    align-items: center;
+    margin-left: 190px;
+
+    .discover__small-line{
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 8px;
+        height: 1px;
+    }
+
+    .discover__big-line{
+        background-color: rgba(255, 255, 255, 0.4);
+        width: 56px;
+        height: 1px;
+    }
+
+    a{
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+
+        margin: 0 8px;
+    }
+}
+
 .main{
-    height: 100vh;
+    //height: 100vh;
+    margin-bottom: 140px;
 
     .main__swiper{
-        height: 100%;
+        width: 100%;
+        height: 744px;
+        position: absolute;
+
+        z-index: 0;
+
+        top: 0;
+        left: 0;
+
         .swiper-wrapper{
             .swiper-slide{
                 background-size: cover;
-                background-repeat: no-repeat;
-
-                h1{
-                    font-weight: 700;
-                    font-size: 56px;
-                    line-height: 68px;  
-            
-                    margin-bottom: 50px;
-                    padding-top: 280px;
-                    margin-left: 190px;
-                }
-            
-                .main__discover{
-                    display: flex;
-                    align-items: center;
-                    margin-left: 190px;
-            
-                    .discover__small-line{
-                        background-color: rgba(255, 255, 255, 0.4);
-                        width: 8px;
-                        height: 1px;
-                    }
-            
-                    .discover__big-line{
-                        background-color: rgba(255, 255, 255, 0.4);
-                        width: 56px;
-                        height: 1px;
-                    }
-            
-                    a{
-                        font-weight: 700;
-                        font-size: 10px;
-                        line-height: 12px;
-                        letter-spacing: 0.12em;
-                        text-transform: uppercase;
-            
-                        margin: 0 8px;
-                    }
-                }
-
-                
+                background-repeat: no-repeat;                
             }
 
             .slide1{background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(source/img/main__main__swaiper-slide1.jpg);}
@@ -55,4 +57,193 @@
             .slide4{background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(source/img/main__main__swaiper-slide4.jpg);}
         }
     }
+
+    h1, .main__discover, .main__bottom, .main__side-bar{
+        position: relative;
+        z-index: 2;
+
+        display: inline-block;
+    }
+
+    h1{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;  
+
+        margin-bottom: 50px;
+        padding-top: 280px;
+        margin-left: 190px;
+    }
+
+    .main__discover{
+        display: flex;
+        align-items: center;
+        margin-left: 190px;
+        margin-bottom: 200px;
+
+        .discover__small-line{
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 8px;
+            height: 1px;
+        }
+
+        .discover__big-line{
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 56px;
+            height: 1px;
+        }
+
+        a{
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+
+            margin: 0 8px;
+        }
+    }
+
+    .main__paginator{
+        position: absolute;
+        z-index: 2;
+
+        top: 450px;
+        right: 300px;
+
+        width: 230px;
+
+        display: flex;
+        align-items: center;
+        //justify-content: space-between;
+
+        .left-number{
+            margin-right: 200px;
+        }
+
+        span{
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.06em;
+        }
+
+        img{padding: 5px;}
+
+        .left-arrow, .right-arrow{
+            cursor: pointer;
+        }
+
+        .right-arrow{
+            transform: rotate(-180deg);
+        }
+
+        .swiper-pagination-progressbar-fil{
+            background-color: white;
+        }
+
+        .main__paginator__progress-bar{
+            margin-top: 8px;
+            width: 185px;
+            height: 1.5px;
+
+            margin-left: 40px;
+
+            color: white;
+            background-color: rgba(255, 255, 255, 0.34);
+        }
+    }
+
+    .main__side-bar{
+        position: absolute;
+
+        top: 45%;
+        right: 55px;
+
+        transform: rotate(-180deg);
+        writing-mode: vertical-rl;
+
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+
+        .text-border{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 47px;
+            letter-spacing: 0.04em;
+
+            margin-right: 10px;
+
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px white;
+
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            //font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+
+    .main__bottom{
+        display: flex;
+        align-items: center;
+
+        height: 50px;
+
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.06em;
+
+        .main__country-link{
+            display: flex;
+            margin-right: 120px;
+
+            a{margin-right: 16px;}
+        }
+
+        .main__select{
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 1.15336px 1.22544px rgba(0, 0, 0, 0.5), inset 0px -0.288339px 0.0720847px rgba(255, 255, 255, 0.23);
+            backdrop-filter: blur(1px);
+            border-radius: 8.70783px;
+
+            padding: 5px 10px;
+            margin-right: 70px;
+
+            display: flex;
+            align-items: center;
+
+            .main__country-select{
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0.06em;
+                //color: #FFFFFF;
+
+                cursor: pointer;
+
+                margin-left: 5px;
+    
+                //appearance: none;
+                background-color: transparent;
+                font-family: inherit;
+                font-size: inherit;
+                line-height: inherit;
+                color: inherit;
+    
+                option{
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        .main__number{
+            margin-right: 30px;
+        }
+    }
+}
+
+.phylosophy{
+
 }
