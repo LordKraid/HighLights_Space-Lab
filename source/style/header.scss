@@ -1,0 +1,110 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    padding: 25px 62px;
+
+    transition: 0.2s;
+
+    .header__left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        flex-basis: 42%;
+
+        .header__logo{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+
+            margin-right: 20px;
+            flex-basis: 40%;
+        }
+
+        menu{
+            flex-basis: 60%;
+            margin-right: 50px;
+            
+            ul{
+                display: flex;
+                justify-content: space-between;
+
+                li{
+                    padding: 0 10px;
+                    transition: 0.2s;
+                }
+
+                li:hover{
+                    transform: scale(1.1);
+                }
+
+                li:active{
+                    transform: scale(0.9);
+                }
+
+                .ul__about-us{min-width: 75px;}
+            }
+        }
+    }
+
+    .header__right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.scrolled{
+    padding: 15px 62px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+a{transition: 0.2s;}
+
+a:hover{transform: scale(1.1);}
+
+a:active{transform: scale(0.9);}
+
+.send-request-btn{
+    padding: 17px 48px;
+    border: 1px solid rgba(253, 253, 253, 0.32);
+    background-color: transparent;
+    color: white;
+    min-width: 183px;
+    margin-left: 83px;
+
+    transition: 0.1s;
+}
+
+.send-request-btn:hover{
+    transform: scale(1.03);
+    background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+}
+
+.send-request-btn:active{
+    transform: scale(0.98);
+    background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+}
+
+@media(max-width: 1024px) {
+    header{
+        .header__left{
+            menu{display: none;}
+        }
+    }
+}

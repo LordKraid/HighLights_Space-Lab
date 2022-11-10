@@ -6,7 +6,6 @@
 .discover{
     display: flex;
     align-items: center;
-    margin-left: 190px;
 
     .discover__small-line{
         background-color: rgba(255, 255, 255, 0.4);
@@ -33,7 +32,7 @@
 
 .main{
     //height: 100vh;
-    margin-bottom: 140px;
+    margin-bottom: 220px;
 
     .main__swiper{
         width: 100%;
@@ -80,28 +79,6 @@
         align-items: center;
         margin-left: 190px;
         margin-bottom: 200px;
-
-        .discover__small-line{
-            background-color: rgba(255, 255, 255, 0.4);
-            width: 8px;
-            height: 1px;
-        }
-
-        .discover__big-line{
-            background-color: rgba(255, 255, 255, 0.4);
-            width: 56px;
-            height: 1px;
-        }
-
-        a{
-            font-weight: 700;
-            font-size: 10px;
-            line-height: 12px;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-
-            margin: 0 8px;
-        }
     }
 
     .main__paginator{
@@ -245,5 +222,167 @@
 }
 
 .phylosophy{
+    padding-left: 13%;
+    margin-bottom: 140px;
 
+    .phylosophy__span-about{
+        position: absolute;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        //transform: rotate(-90deg);
+
+        margin-left: -140px;
+        top: 120%;
+
+        span{
+            display: inline-block;
+
+            width: 1px;
+            height: 57px;
+
+            background: #828282;
+            opacity: 0.16;
+
+            margin-top: 13px;
+        }
+
+        p{
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 14px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #828282;
+            
+            opacity: 0.32;
+
+            transform: rotate(-180deg);
+            writing-mode: vertical-rl;
+        }
+    }
+
+    .phylosophy__span-ceo{
+        position: absolute;
+
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        //transform: rotate(-90deg);
+
+        right: 3%;
+        top: 210%;
+
+        span{
+            display: inline-block;
+
+            width: 1px;
+            height: 57px;
+
+            background: #828282;
+            opacity: 0.16;
+
+            margin-top: 13px;
+        }
+
+        p{
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 14px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #828282;
+            
+            opacity: 0.32;
+
+            transform: rotate(-180deg);
+            writing-mode: vertical-rl;
+        }
+    }
+
+    .phylosophy__company{
+        display: flex;
+        justify-content: space-between;
+
+        .phylosophy__company__info{
+            color: #080808;
+            padding-right: 25px;
+
+            margin-bottom: 20%;
+
+            h1{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+
+                margin-bottom: 30px;
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+                opacity: 0.7;
+
+                max-width: 515px;
+            }
+
+            .phylosophy__discover{
+                margin-top: 64px;
+
+                div{background-color: rgba(0, 0, 0, 1);}
+            }
+        }
+
+        .phylosophy__company__img{
+            flex-basis: 38%;
+
+            margin-top: -80px;
+
+            img{width: 100%;}
+        }
+    }
+
+    .philosophy__quote{
+        display: flex;
+        align-items: center;
+
+        .quote__imgs{
+            display: flex;
+
+            img{width: 100%;}
+
+            .phylosophy__quote__img2{
+                position: relative;
+                margin-left: -100px;
+
+                top: -100px;
+            }
+        }
+
+        .quote__text{
+            display: flex;
+
+            margin-left: 2%;
+
+            span{
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+                color: #080808
+            }
+
+            p{
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 170.66%;
+                color: #080808;
+                opacity: 0.7;
+
+                max-width: 380px;
+                margin-left: 32px;
+            }
+        }
+    }
 }
