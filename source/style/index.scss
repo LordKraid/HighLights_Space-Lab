@@ -90,6 +90,12 @@ h1{
         margin-top: -50px;
 
         div:not(:first-child){margin-left: -180px;}
+
+        div{transition: 0.2s;}
+        
+        div:hover{
+            transform: scale(1.2) rotate(10deg);
+        }
     }
 
     .projects-lorem__right{
