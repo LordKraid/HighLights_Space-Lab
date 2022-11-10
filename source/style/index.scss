@@ -12,7 +12,10 @@ html{
     scroll-behavior: smooth;
 }
 
-body{overflow-x: hidden;}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 .wrapper{
     overflow-x: hidden;
@@ -32,6 +35,60 @@ body{overflow-x: hidden;}
     max-width: 1312px;
     padding: 0 25px;
     margin: 0 auto;
+}
+
+.preloder{
+    position: fixed;
+    z-index: 1001;
+
+    transition: 0.3s;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: #080808;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.26em;
+
+    color: #FAFAFA;
+
+    .preloader__load{
+        display: flex;
+
+        transition: 0.2s;
+
+        margin-left: -100px;
+
+        .hi{
+            margin-right: 10px;
+        }
+    }
+
+    .preloader__downloaded{
+        opacity: 0;
+        transition: 0.2s;
+
+        margin-right: -30px;
+    }
+
+    .visible{
+        opacity: 1;
+    }
+
+    .hiden{
+        opacity: 0;
+    }
 }
 
 h1{
