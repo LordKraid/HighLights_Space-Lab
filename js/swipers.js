@@ -9,5 +9,11 @@ const MainMain = new Swiper('.main__swiper', {
     pagination: {
         el: '.main__paginator__progress-bar',
         type: 'progressbar'
-    }
+    },
+
+    autoplay: {
+        delay: 6000
+    },
+
+    speed: 500
 });
