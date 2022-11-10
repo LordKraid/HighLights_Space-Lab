@@ -39,3 +39,92 @@ h1{
     font-size: 36px;
     line-height: 44px;
 }
+
+.make_request{
+    padding: 17px 48px;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+
+    transition: 0.2s;
+
+    border: 2px solid white;
+
+    color: #080808;
+    background: #FFFFFF;
+}
+
+.make_request:hover{
+    background: rgba($color: #FFFFFF, $alpha: 0.3);
+    color: #FFFFFF;
+}
+
+.make_request:active{
+    background: rgba($color: #000000, $alpha: 0.5);
+    transform: scale(0.95);
+}
+
+.projects-lorem{
+    padding: 150px 0;
+
+    margin: 0 133px;
+
+    h1{
+        text-align: left!important;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 51px;
+
+        max-width: 425px;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    .projects-lorem__img-block{
+        display: flex;
+        justify-content: center;
+        margin-top: -50px;
+
+        div:not(:first-child){margin-left: -180px;}
+    }
+
+    .projects-lorem__right{
+        display: flex;
+        justify-content: end;
+
+        position: relative;
+        z-index: 2;
+
+        margin-top: -200px;
+
+        .projects-lorem__right-info{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                display: inline-block;
+                text-align: left;
+                margin: 0;
+    
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 24px;
+    
+                max-width: 340px;
+
+                color: #FFFFFF;
+            }
+    
+            .make_request{
+                display: inline-block;
+                margin-top: 41px;
+    
+                max-width: 183px;
+            }
+        }
+    }
+}
