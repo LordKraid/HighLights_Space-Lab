@@ -1,6 +1,7 @@
 @import url(null.scss);
 @import url(main.scss);
 @import url(header.scss);
+@import url(contacts.scss);
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -189,5 +190,84 @@ h1{
                 max-width: 183px;
             }
         }
+    }
+}
+
+.insta{
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+        color: #080808;
+
+        text-align: center;
+
+        margin-bottom: 18px;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #080808;
+        opacity: 0.6;
+
+        text-align: center;
+
+        max-width: 390px;
+    }
+
+    img{
+        position: absolute;
+    }
+
+    .insta__img-2{
+        top: 3%;
+        left: 3%;
+    }
+
+    .insta__img-1{
+        top: 25%;
+        left: -12%;
+    }    
+
+    .insta__img-3{
+        top: -15%;
+        right: 20%;
+    }
+
+    .insta__img-4{
+        top: 7%;
+        right: 8%;
+    }
+
+    .insta__img-5{
+        bottom: 8%;
+        right: -6%;
+    }
+
+    .insta__img-6{
+        bottom: -10%;
+        right: 25%;
+    }
+
+    .insta__img-7{
+        bottom: 1%;
+        left: 12%;
+    }
+
+    .insta__img-8{
+        left: -15%;
+        bottom: -15%;
     }
 }

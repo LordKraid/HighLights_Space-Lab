@@ -526,3 +526,51 @@
         }
     }
 }
+
+.main-contacts{
+    .contacts{
+        height: 670px;
+    
+        .side{
+            position: absolute;
+    
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+    
+            top: 115px;
+            left: 65px;
+    
+            font-weight: 700;
+            font-size: 8px;
+            line-height: 14px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+    
+            color: rgba(255, 255, 255, 0.1);
+    
+            transform: rotate(-180deg);
+            writing-mode: vertical-rl;
+        }
+    
+        .line{
+            display: inline-block;
+    
+            position: absolute;
+    
+            top: 180px;
+            left: 71px;
+    
+            width: 1px;
+            height: 57px;
+    
+            background: rgba(255, 255, 255, 0.1);
+    
+            //margin-top: 13px;
+        }
+
+        .contacts__top{
+            h1{padding-top: 119px;}
+        }
+    }
+}
