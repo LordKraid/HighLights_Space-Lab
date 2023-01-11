@@ -33,7 +33,11 @@ function scss() {
 
 function serve() {
     sync.init({
-        server: 'source/..'
+        server: {
+            baseDir: "./"
+        },
+        port: 3000,
+        notify: false
     })
 
     watch('source/html/**.html', series(html)).on('change', sync.reload)
